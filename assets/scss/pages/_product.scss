@@ -2,7 +2,7 @@
     display: flex;
     max-width: 100%;
     .pc-phone{
-        width: 100%;
+        width: 50%;
     }
     .sm-phone{
         display: none;
@@ -15,7 +15,7 @@
             display: none;
         }
         .sm-phone{
-            width: 100%;
+            width: 50%;
             display:block;
         }
     }
