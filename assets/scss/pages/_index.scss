@@ -1,0 +1,392 @@
+// banner區域 設定
+.homeBanner{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 787px;
+  .container{
+      max-width: 1296px;
+      margin: 0 auto;
+      .banner-content{
+          display: block;
+          text-align: end;
+          padding-top: 20%;
+          h1{
+              border:none;
+              font-size: $font-s-36;
+              color:$dark-red;
+              line-height: 54px;
+              margin: 0; padding: 0;
+          }
+          h2{
+              font-size: $font-s-64;
+              color:$dark-red;
+              line-height: 96px;
+              font-weight: bold;
+          }
+          .btn{
+              text-decoration: none;
+              background-color: $light-red;
+              color:#ffffff;
+              padding: 5px;
+          }
+      }
+  }
+}
+
+@include pad{
+  .homeBanner{
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+      background-size: cover;
+      .container{
+          .banner-content{
+              padding-right:12px;
+              padding-top: 35%;
+          }
+      }
+  }
+}
+@include iphone{
+  .homeBanner{
+      background-size: cover;
+      background-position: left center;
+      max-height: 396px;
+      .container{
+          .banner-content{
+              padding-top: 30%;
+              h1{
+                  font-size: 16px;
+                  line-height: 24px;
+              }
+              h2{
+                  font-size: $font-s-24;
+                  line-height: 36px;
+                  margin-bottom: 8px;
+              }
+              .btn{
+                  font-size: $font-s-20;
+                  line-height: 30px;
+              }
+          }
+      }
+  }
+}
+
+// 提供的服務 設定
+.service{
+  background-color: $bg-pink;
+  padding: 80px 0;
+  .container{
+      max-width: 1296px;
+      margin: 0 auto;
+  }
+}
+// 提供的服務 大標籤設定
+h3{
+  text-align: center;
+  color:$dark-red;
+  font-weight: bold;
+  line-height: 72px;
+  font-size: $font-s-48;
+  margin-bottom: 36px;
+}
+// 提供的服務 設定
+.servicePart{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  gap:24px;
+  .serviceItem{
+      .service-img{
+          text-align: center;
+          img{
+              width: 83px;
+          }
+      }
+      h4{
+          text-align: center;
+          color:$dark-red;
+          font-weight: bold;
+          line-height: 36px;
+          font-size: $font-s-24;
+      }
+      p{
+          line-height: 24px;
+      }
+  }
+}
+@include pad{
+  .servicePart{
+      padding: 0 12px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .serviceItem{
+          max-width: 336px;
+      }
+  }
+}
+@include iphone{
+  .service{
+      .container{
+          h3{
+              line-height: 36px;
+              font-size: $font-s-24;
+          }
+      }
+  }
+}
+// 推薦經典系列 設定
+.recommend{
+  padding: 80px 0;
+  .container{
+      max-width: 1296px;
+      margin: 0 auto;
+  }
+}
+// 推薦經典系列 設定
+.glassesType{
+  display: flex;
+  justify-content: space-between;
+  gap:24px;
+  .typeItem{
+      img{
+          width: 416px;
+      }
+      p{
+          color:$light-red;
+          font-weight: bold;
+          line-height: 72px;
+          font-size: $font-s-48;
+          text-align: center;
+      }
+  }
+}
+// 推薦經典系列 響應式設定
+@include pad{
+  .glassesType{
+      flex-direction: column;
+      .typeItem{
+          margin: 0 auto;
+      }
+  }
+}
+@include iphone{
+  .glassesType{
+      padding: 0 12px;
+      max-width: 100%;
+  }
+}
+
+// 聯名設計鏡框系列 設定
+.design{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  background-position: center center;
+  background-size: cover;
+  padding:80px 0;
+  .container{
+      max-width: 1296px;
+      margin: 0 auto;
+      h3{
+          color:#ffffff;
+      }
+  }
+}
+.design-images{
+  display: flex;
+  justify-content: center;
+  .designImg{
+      img{
+          display: block;
+      }
+      p{
+          text-align: center;
+          font-weight: bold;
+          color:$light-red;
+          line-height: 72px;
+          font-size: $font-s-48;
+          background-color: #ffffff;
+      }
+  }
+}
+
+// 聯名設計鏡框系列 響應式設定
+@include pad{
+  .design{
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+      background-position: center center;
+      background-size: cover;
+      padding:80px 12px 40px 12px;
+  }
+  .design-images{
+      padding: 0 12px;
+      flex-direction: column;
+      .designImg{
+          margin-bottom: 24px;
+      }
+  }
+}
+@include iphone{
+  .design{
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true);
+      background-position: center center;
+      background-size: cover;
+  }
+}
+
+// 顧客推薦區域
+.custom{
+  padding: 80px 0;
+  .container{
+      max-width: 1296px;
+      margin: 0 auto;
+  }
+}
+
+// 顧客推薦區域
+.customRec{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap:24px;
+  .feedBack{
+      width: 100%;
+      border: 1px solid #DEE2E6;
+      &:hover{
+          box-shadow: $card-shadow;
+      }
+      .cus-pic{
+          display: block;
+          img{
+              width: 100%;
+          }
+      }
+      .cus-body{
+          padding: 16px;
+          h4, p{
+              font-size: 16px;
+              line-height: 24px;
+          }
+      }
+      .cus-foot{
+          padding: 16px;
+          p{
+              font-size: 14px;
+              line-height: 21px;
+              color:#707070;
+          }
+      }
+  }
+}
+
+// 顧客推薦區域 響應式設定
+@include pad{
+  .customRec{
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0 12px;
+      justify-content: center;
+      .feedBack{
+          max-width: 45%;
+      }
+  }
+}
+
+@include iphone{
+  .custom{
+      padding: 40px 0;
+  }
+  .customRec{
+      flex-direction: column;
+      padding: 0px 12px;
+      .feedBack{
+          max-width: 100%;
+      }
+  }
+}
+
+// 聯絡我們區域 設定
+.ContactUs{
+  background-color: $bg-pink;
+  padding: 80px 0;
+  .container{
+      max-width: 1296px;
+      margin: 0 auto;
+      .conus-content{
+          margin-bottom: 24px;
+          p{
+              text-align: center;
+          }
+      }
+      .form-container{
+          margin: 0 auto;
+          text-align: center;
+          max-width: 636px;
+          .form-row{
+              margin-bottom: 16px;
+              label{
+                  display: block;
+                  text-align: left;
+                  line-height: 24px;
+              }
+              input{
+                  width: 100%;
+                  height: 36px;
+              }
+              textarea{
+                  width: 100%;
+                  resize: none;
+              }
+          }
+          .form-check{
+              margin-bottom: 48px;
+              text-align: left;
+              label{
+                  line-height: 24px;
+              }
+          }
+      }
+      
+  }
+}
+// 聯絡我們區域 按鈕 設定
+.input-btn{
+  .btn{
+      width: 70%;
+      padding: 10px;
+      background-color: $light-red;
+      color:#ffffff;
+      cursor: pointer;
+      border:none;
+      &:hover{
+          background-color: $dark-red;
+      }
+  }
+}
+// 聯絡我們區域響應式 設定
+@include pad{
+  .ContactUs{
+      padding: 80px 12px;
+  }
+  .form-container{
+      padding: 0 12px;
+  }
+}
+@include iphone{
+  .ContactUs{
+      padding: 40px 12px;
+      .container{
+          h3{
+              font-size: $font-s-24;
+              line-height: 36px;
+          }
+          p{
+              font-size: 16px;
+              line-height: 24px;
+              padding: 0 12px;
+              br{
+                  display: none;
+              }
+          }
+      }
+  }
+}

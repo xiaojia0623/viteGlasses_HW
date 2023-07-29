@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>眼鏡網頁 - 門市據點</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!-- 門市據點區域 - 選擇 -->
+    <section class="shopPlace">
+        <div class="container">
+            <h1>門市據點</h1>
+            <div class="spotShop">
+                <h2>選擇分店</h2>
+                <select name="place">
+                    <option value="台北中山旗艦店">台北中山旗艦店</option>
+                    <option value="台北綠園店">台北綠園店</option>
+                    <option value="台中清水旗艦店">台中清水旗艦店</option>
+                    <option value="高雄中正形象店">高雄中正形象店</option>
+                    <option value="高雄夢時代店">高雄夢時代店</option>
+                </select>
+            </div>
+            <div class="shopMap">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true" alt="台北中山旗艦店圖">
+                    </div>
+                    <div class="card-bbody">
+                        <div class="card-body">
+                            <h3>台北中山旗艦店</h3>
+                        </div>
+                        <div class="card-foot">
+                            <ul>
+                                <li class="card-content">
+                                    <span class="material-symbols-outlined">call</span>
+                                    電話：<a href="tel:+886-2-000-1234">(02)000-1234</a></li>
+                                <li class="card-content">
+                                    <span class="material-symbols-outlined">schedule</span>
+                                    營業時間：10:00-21:00</li>
+                                <li class="card-content">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    地址：<a href="#">台北市中山區南京東路25巷2-1號</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-img">
+                    <img src="/assets/images/螢幕快照 2020-02-13 16.35.44.png" alt="shop-map">
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

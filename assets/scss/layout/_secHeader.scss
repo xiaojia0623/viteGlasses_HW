@@ -1,0 +1,44 @@
+.secHeader{
+    background-color: $dark-red;
+    .container{
+        max-width: 1296px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 0;
+    }
+}
+.secMenu{
+    display: flex;
+    justify-content: space-between;
+    .menu{
+        margin-right: 48px;
+        a{
+            text-decoration: none;
+            font-size: $font-s-20;
+            color:#ffffff;
+            padding: 0 12px;
+            &:hover{
+                color:rgb(239, 133, 46);
+            }
+        }
+    }
+}
+.material-symbols-outlined{
+    color:#ffffff;
+    font-size: 29px;
+    cursor: pointer;
+    &:hover{
+        color:#555555;
+    }
+}
+@include pad{
+    .secHeader{
+        padding: 0 12px;
+    }
+}
+@include iphone{
+    .secHeader{
+        display: none;
+    }
+}

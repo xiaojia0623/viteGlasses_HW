@@ -1,0 +1,118 @@
+.blog{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    .container{
+        max-width: 1296px;
+        margin: 0 auto;
+    }
+}
+
+.blogItems{
+    .bitem{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        gap:24px;
+        .bimg{
+            width: 636px;
+        }
+    }
+    .blog-content{
+        max-width: 636px;
+        h2{
+            font-size: $font-s-32;
+            color:$dark-red;
+            line-height: 48px;
+        }
+        .titleDate{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            p{
+                font-size: $font-s-20;
+                line-height: 30px;
+            }
+            span{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .p-content{
+            line-height: 30px;
+            color:#555555;
+            line-height: 30px;
+            span{
+                display: none;
+            }
+        }
+        .btn{
+            margin-top: 21%;
+            color:$dark-red;
+            font-size: $font-s-36;
+            display: block;
+            text-align: end;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
+@include pad{
+    .blog{
+        .container{
+            padding: 0 12px;
+        }
+    }
+    .bitem{
+        justify-content: center;
+        .bimg{
+            width: 100%;
+        }
+        .blog-content{
+            max-width: 336px;
+            h2{
+                font-size: $font-s-24;
+                line-height: 36px;
+            }
+            .titleDate{
+                margin: 0;
+                p, span{
+                    font-size:16px;
+                    line-height: 24px;
+                }
+            }
+            .p-content{
+                font-size:16px;
+                line-height: 24px;
+                span{
+                    display: inline-block;
+                    a{
+                        text-decoration: none;
+                        color:#555555;
+                    }
+                }
+            }
+            .btn{
+                display: none;
+            }
+        }
+    }
+}
+
+@include iphone{
+    .blogItems{
+        .bitem{
+            flex-direction: column;
+            margin:10px auto;
+            .bimg{
+                max-width: 100%;
+            }
+            .blog-content{
+                max-width: 100%;
+                margin: 0;
+                .p-content, .btn{
+                    display: none;
+                }
+            }
+        }
+    }
+}

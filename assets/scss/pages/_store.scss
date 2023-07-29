@@ -1,0 +1,85 @@
+//  門市據點區域 及 門市據點- 選擇 
+.shopPlace{
+    .container{
+        max-width: 1296px;
+        margin: 0 auto;
+        padding-top: 96px;
+        padding-bottom: 80px;
+    }
+}
+
+// 門市據點區域 大標題設定
+h1{
+    padding: 8px 16px;
+    border-left: 8px solid #9F1213;
+    font-size: $font-s-48;
+    line-height: 72px;
+    font-weight: bold;
+    margin-bottom: 33px;
+}
+// 門市據點 選擇地區/選擇分店 設定
+.spotShop{
+    display: flex;
+    justify-content: start;
+    h2{
+        font-size: $font-s-24;
+        margin-right: 16px;
+    }
+    select{
+        width: 304px; height: 38px;
+        background-color: #ffffff;
+        border: 1px solid #CED4DA;
+        align-items: center;
+        padding: 6px;
+        margin-bottom: 41px;
+        cursor: pointer;
+        option{
+            color:#495057;
+            
+        }
+    }
+}
+//門市分店區塊 設定
+.shopper-card{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    .card{
+        width: 30%;
+        .btn{
+            background-color: #000;
+            color:#ffffff;
+            text-align: center;
+            padding: 8px;
+            max-width: 100%;
+            text-decoration: none;
+            display: block;
+        }
+    }
+}
+@include pad{
+    .shopper-card{
+        justify-content:space-between;
+        .card{
+            width:47%;
+            margin: 0 ;
+        }
+    }
+}
+
+@include iphone{
+    .shopper-card{
+        flex-direction: column;
+        .card{
+            width:100%;
+            margin: 0 auto;
+            .card-header{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
