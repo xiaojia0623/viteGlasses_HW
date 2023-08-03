@@ -33,32 +33,35 @@
 }
 
 @include iphone{
-  .nav-section{
-      flex-direction: column;
-      padding-left: 0; padding-right: 0;
-      max-width: 100%;
-      .navbar-logo{
-        margin: 0 0 16px 16px;
-      }
-      .nav-menu{
-          flex-wrap: wrap;
-          .nav-item{
-            width: 50%;
-            margin-right: 0px;
-            border: 1px solid white;
-            &:last-child a{
-                padding-right: 0;
-            }
-            a{
-                line-height: 24px;
-                text-align: center;
-                font-size: 16px;
-                padding: 12px 0;
-                &:hover{
-                    opacity: 0.7;
+    .navTop{
+        padding: 0;
+    }
+    .nav-section{
+        flex-direction: column;
+        padding: 0;
+        max-width: 100%;
+        .navbar-logo{
+            margin: 0 0 16px 16px;
+        }
+        .nav-menu{
+            flex-wrap: wrap;
+            .nav-item{
+                width: 50%;
+                margin-right: 0px;
+                border: 1px solid white;
+                &:last-child a{
+                    padding-right: 0;
+                }
+                a{
+                    line-height: 24px;
+                    text-align: center;
+                    font-size: 16px;
+                    padding: 12px 0;
+                    &:hover{
+                        opacity: 0.7;
+                    }
                 }
             }
-          }
-      }
-  }
+        }
+    }
 }
