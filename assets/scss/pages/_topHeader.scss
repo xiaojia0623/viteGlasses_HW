@@ -12,7 +12,8 @@
                 border-left:1px solid #DCDCDC;
                 border-right:1px solid #DCDCDC;
                 a{
-                    max-width: 100%;
+                    width: 100%;
+                    display: block;
                     font-size: $font-s-32;
                     font-weight: bold;
                     color:#000;
