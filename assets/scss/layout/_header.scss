@@ -9,55 +9,54 @@
 }
 
 .nav-section{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .nav-img{
-      img{
-          width: 80px;height: 48.5px;
-      }
-  }
-  .nav-menu{
-      display: flex;
-      justify-content: space-between;
-      .nav-item{
-          margin-left: 64px;
-          a{
-              line-height: 30px;
-              text-decoration: none;
-              color:#ffffff;
-              font-size: $font-s-20;
-              padding: 5px 12px;
-              border-radius: 5px;
-              &:hover{
-                  color:$light-red;
-                  background-color: #ffffff;
-              }
-          }
-      }
-  }
+    display: flex;
+    justify-content: space-between;
+    .navbar-logo{
+        width: 80px;
+    }
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        .nav-item{
+            height: 100%;
+            a{
+                height: 100%;
+                display: block;
+                line-height: 30px;
+                font-size: $font-s-20;
+                color:#ffffff;
+                padding: 8px 32px;
+            }
+        }
+    }
 }
 
 @include iphone{
   .nav-section{
-      flex-wrap: wrap;
-      img{
-          padding: 10px;
+      flex-direction: column;
+      padding-left: 0; padding-right: 0;
+      max-width: 100%;
+      .navbar-logo{
+        margin: 0 0 16px 16px;
       }
       .nav-menu{
-          width: 100%;
           flex-wrap: wrap;
-          justify-content: center;
           .nav-item{
-              margin: 0;
-              text-align: center;
-              flex-basis: 40%;
-              border: 1px solid white;
-              padding: 12px;
-              a{
-                  line-height: 24px;
-                  border-radius: 0px;
-              }
+            width: 50%;
+            margin-right: 0px;
+            border: 1px solid white;
+            &:last-child a{
+                padding-right: 0;
+            }
+            a{
+                line-height: 24px;
+                text-align: center;
+                font-size: 16px;
+                padding: 12px 0;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
           }
       }
   }
