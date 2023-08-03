@@ -1,6 +1,7 @@
 .topHeader{
     .container{
-        max-width: 1296px;
+        max-width: 1320px;
+        padding: 0 12px;
         margin: 0 auto;
         ul{
             display: flex;
@@ -30,6 +31,7 @@
 @include iphone{
     .topHeader{
         .container{
+            padding: 0 12px;
             ul{
                 max-width:100%;
                 li{

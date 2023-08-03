@@ -1,11 +1,11 @@
 .secHeader{
     background-color: $dark-red;
     .container{
-        max-width: 1296px;
+        padding: 13px 12px;
+	    max-width: 1320px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        padding: 13px 0;
     }
 }
 .secMenu{

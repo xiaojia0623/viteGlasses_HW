@@ -5,31 +5,33 @@
   background-size: cover;
   height: 787px;
   .container{
-      max-width: 1296px;
-      margin: 0 auto;
-      .banner-content{
-          display: block;
-          text-align: end;
-          padding-top: 20%;
-          h1{
-              border:none;
-              font-size: $font-s-36;
-              color:$dark-red;
-              line-height: 54px;
-              margin: 0; padding: 0;
-          }
-          h2{
-              font-size: $font-s-64;
-              color:$dark-red;
-              line-height: 96px;
-              font-weight: bold;
-          }
-          .btn{
-              text-decoration: none;
-              background-color: $light-red;
-              color:#ffffff;
-              padding: 5px;
-          }
+    padding: 0 12px;
+	max-width: 1320px;
+    margin: 0 auto;
+    .banner-content{
+
+        display: block;
+        text-align: end;
+        padding-top: 20%;
+        h1{
+            border:none;
+            font-size: $font-s-36;
+            color:$dark-red;
+            line-height: 54px;
+            margin: 0; padding: 0;
+        }
+        h2{
+            font-size: $font-s-64;
+            color:$dark-red;
+            line-height: 96px;
+            font-weight: bold;
+        }
+        .btn{
+            text-decoration: none;
+            background-color: $light-red;
+            color:#ffffff;
+            padding: 5px;
+        }
       }
   }
 }
@@ -52,6 +54,7 @@
       background-position: left center;
       max-height: 396px;
       .container{
+        padding: 0 12px;
           .banner-content{
               padding-top: 30%;
               h1{
@@ -79,6 +82,7 @@
   .container{
       max-width: 1296px;
       margin: 0 auto;
+      padding: 0 12px;
   }
 }
 // 提供的服務 大標籤設定
@@ -128,6 +132,7 @@ h3{
 @include iphone{
   .service{
       .container{
+        padding: 0 12px;
           h3{
               line-height: 36px;
               font-size: $font-s-24;
@@ -139,8 +144,9 @@ h3{
 .recommend{
   padding: 80px 0;
   .container{
-      max-width: 1296px;
-      margin: 0 auto;
+    padding: 0 12px;
+    max-width: 1320px;
+    margin: 0 auto;
   }
 }
 // 推薦經典系列 設定
@@ -184,11 +190,12 @@ h3{
   background-size: cover;
   padding:80px 0;
   .container{
-      max-width: 1296px;
-      margin: 0 auto;
-      h3{
-          color:#ffffff;
-      }
+    max-width: 1320px;
+    padding: 0 12px;
+    margin: 0 auto;
+    h3{
+        color:#ffffff;
+    }
   }
 }
 .design-images{
@@ -309,42 +316,43 @@ h3{
   background-color: $bg-pink;
   padding: 80px 0;
   .container{
-      max-width: 1296px;
-      margin: 0 auto;
-      .conus-content{
-          margin-bottom: 24px;
-          p{
-              text-align: center;
-          }
-      }
-      .form-container{
-          margin: 0 auto;
-          text-align: center;
-          max-width: 636px;
-          .form-row{
-              margin-bottom: 16px;
-              label{
-                  display: block;
-                  text-align: left;
-                  line-height: 24px;
-              }
-              input{
-                  width: 100%;
-                  height: 36px;
-              }
-              textarea{
-                  width: 100%;
-                  resize: none;
-              }
-          }
-          .form-check{
-              margin-bottom: 48px;
-              text-align: left;
-              label{
-                  line-height: 24px;
-              }
-          }
-      }
+    padding: 0 12px;
+    margin: 0 auto;
+    max-width: 1320px;
+    .conus-content{
+        margin-bottom: 24px;
+        p{
+            text-align: center;
+        }
+    }
+    .form-container{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 636px;
+        .form-row{
+            margin-bottom: 16px;
+            label{
+                display: block;
+                text-align: left;
+                line-height: 24px;
+            }
+            input{
+                width: 100%;
+                height: 36px;
+            }
+            textarea{
+                width: 100%;
+                resize: none;
+            }
+        }
+        .form-check{
+            margin-bottom: 48px;
+            text-align: left;
+            label{
+                line-height: 24px;
+            }
+        }
+    }
       
   }
 }

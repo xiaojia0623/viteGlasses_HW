@@ -24,7 +24,8 @@
 .Combi{
     padding: 80px 0;
     .container{
-        max-width: 1296px;
+        max-width: 1320px;
+        padding: 0 12px;
         margin: 0 auto;
         .pro-title{
             text-align: center;
@@ -98,6 +99,7 @@
 @include iphone{
     .Combi{
         .container{
+            padding: 0 12px;
             .pro-title{
                 h1, h2{
                     font-size: $font-s-24;
