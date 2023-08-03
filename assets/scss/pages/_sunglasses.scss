@@ -99,6 +99,7 @@
 .SunPagination{
     display: flex;
     justify-content: center;
+    max-width: 100%;
     li{
         a{
             border: 1px solid #555555;
@@ -118,5 +119,6 @@
 @include iphone{
     .SunPagination{
         padding: 0 12px;
+
     }
 }
