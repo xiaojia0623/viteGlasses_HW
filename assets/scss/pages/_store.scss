@@ -46,7 +46,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
+    gap: 24px;
     .card{
         width: 30%;
         .btn{
