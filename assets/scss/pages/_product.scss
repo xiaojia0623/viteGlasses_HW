@@ -46,7 +46,6 @@
 .pro-items{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 80px;
     .item{
@@ -57,7 +56,7 @@
         .proPrice{
             display: flex;
             justify-content: space-between;
-            p{
+            h3{
                 line-height: 36px;
                 font-size: $font-s-24;
             }
