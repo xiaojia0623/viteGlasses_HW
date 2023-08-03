@@ -46,10 +46,11 @@
         margin: 0 auto;
         display: flex;
         justify-content: center;
+        gap:24px;
     }
 }
 .story-content{
-    width: 70%;
+    width: 100%;
     padding-bottom: 80px;
     .title{
         h1{
@@ -116,7 +117,7 @@
 }
 
 .tagsPart{
-    width: 30%;
+    width: 100%;
     text-align: start;
     .top-Title{
         display: flex;
